@@ -8,5 +8,16 @@ titulo.textContent = "Aparecida nutricionista"
 
 /* IMC = massa/altura^2  */
 var paciente = document.querySelector("#primeiro-paciente");
+var tdPeso = document.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+var tdAltura = document.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+var imc = peso / (altura*altura);
 
-console.log(paciente);
+console.log(paciente); //tr
+console.log(tdPeso); //td que tem peso
+console.log(tdAltura); //td que tem altura
+console.log(peso); // valor do peso
+console.log(altura); // valor da altura
+
+console.log(imc);
