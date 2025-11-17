@@ -31,7 +31,7 @@ if (altura <=0 || altura >3) {
 
 //validar peso e altura
 if (alturaEhvalida && pesoEhvalido) {
-    var imc = peso / (altura*peso);
+    var imc = peso / (altura*altura);
     tdImc.textContent = imc;
 }
 
