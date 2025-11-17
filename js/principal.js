@@ -15,9 +15,9 @@ for (var i = 0; i < pacientes.length; i++) {
 
     var pacientes = pacientes[i];  //inserir 
 
-    var tdPeso = document.querySelector(".info-peso");
+    var tdPeso =  paciente.querySelector(".info-peso");
     var peso = tdPeso.textContent;
-    var tdAltura = document.querySelector(".info-altura");
+    var tdAltura = paciente.querySelector(".info-altura");
     var altura = tdAltura.textContent;
     var tdImc = paciente.querySelector(".info-imc");
 
@@ -39,7 +39,7 @@ for (var i = 0; i < pacientes.length; i++) {
     //validar peso e altura
     if (alturaEhvalida && pesoEhvalido) {
         var imc = peso / (altura * altura);
-        tdImc.textContent = imc;
+        tdImc.textContent = imc.toFixed(2);
     }
  
 }
