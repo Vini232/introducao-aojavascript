@@ -6,14 +6,11 @@ titulo.textContent = "Aparecida nutricionista"
 //console.log("titulo.textContent");
 
 
-/* IMC = massa/altura^2  */
-var paciente = document.querySelector("#primeiro-paciente");
-
 var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++) {
 
-    var pacientes = pacientes[i];  //inserir 
+    var paciente = pacientes[i];  //inserir 
 
     var tdPeso =  paciente.querySelector(".info-peso");
     var peso = tdPeso.textContent;
