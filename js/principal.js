@@ -1,23 +1,23 @@
 
 var titulo = document.querySelector(".titulo");
+titulo.textContent = "Aparecida nutricionista"
 
 //console.log("titulo");
 //console.log("titulo.textContent");
 
-titulo.textContent = "Aparecida nutricionista"
 
 /* IMC = massa/altura^2  */
-var tdImc = paciente.querySelector(".info-imc");
 var paciente = document.querySelector("#primeiro-paciente");
 var tdPeso = document.querySelector(".info-peso");
 var peso = tdPeso.textContent;
 var tdAltura = document.querySelector(".info-altura");
 var altura = tdAltura.textContent;
+var tdImc = paciente.querySelector(".info-imc");
 
 var pesoEhvalido = true;
 var alturaEhvalida = true;
 // validar o peso
-if (peso <=0 || peso >=1000) {
+if (peso <=0 || peso >= 1000) {
     console.log ("Peso inválido")
     pesoEhvalido = false;
     tdImc.textContent = "Peso inválido";
@@ -34,8 +34,6 @@ if (alturaEhvalida && pesoEhvalido) {
     var imc = peso / (altura*peso);
     tdImc.textContent = imc;
 }
-
-var imc = peso / (altura*altura);
 
 console.log(paciente); //tr
 console.log(tdPeso); //td que tem peso
