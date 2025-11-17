@@ -17,7 +17,7 @@ var altura = tdAltura.textContent;
 var pesoEhvalido = true;
 var alturaEhvalida = true;
 // validar o peso
-if (peso <=0 || peso > 1000) {
+if (peso <=0 || peso >=1000) {
     console.log ("Peso inválido")
     pesoEhvalido = false;
     tdImc.textContent = "Peso inválido";
